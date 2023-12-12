@@ -38,12 +38,13 @@ var random = 0;
 var previousRandom = 0;
 function randomQute() {
   previousRandom = random;
-  random = Math.floor(Math.random() * qoute.length);
-  if (random == previousRandom) {
-    if (random >= qoute.length) {
-      random -= 1;
-    } else random += 1;
+  randomNumber(qoute.length);
+  if (random === previousRandom) {
+    randomNumber(qoute.length);
   }
   quote.innerHTML = qoute[random].quoteOutput;
   author.innerHTML = qoute[random].authorOutput;
+}
+function randomNumber(length) {
+  random = Math.floor(Math.random() * length);
 }
