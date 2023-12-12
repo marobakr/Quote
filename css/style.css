@@ -1,0 +1,45 @@
+body {
+  font-family: Roboto, Cairo, sans-serif;
+}
+
+/* Start Global Style */
+:root {
+  --main-padding: 6.25rem;
+  --main-color: #434343;
+  --main-bg-color: #f7f7f7;
+  --alt-color: #748182;
+  --main-transition: all 0.5s ease;
+  --main-border: '';
+  --main-fonts: 'Poppins', sans-serif;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+h1 {
+  font-size: 5rem;
+}
+p {
+  font-size: 2rem;
+}
+button {
+  width: 300px;
+  height: 100px;
+}
